@@ -53,7 +53,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 8vh;
-    background-color: #025802;
+    background-color: #053505;
 }
 
 .container-header h1 {
@@ -66,15 +66,112 @@ body {
 #container-main {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 #container-main h2 {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-left: 43px;
+    color: #053505;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+section ~ h2 {
+    margin-top: 20px;
+}
+
+#container-main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.article-book {
+    position: relative;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: #053505;
+    color: white;
+    padding: 15px;
+}
+
+.article-book img {
+    width: 100%;
+    height: 60%;
+}
+
+.content-book  {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.content-book h3 {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: white;
+    color: #053505;
+    text-align: center;
+}
+
+.content-book p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.content-book a {
+    position: absolute;
+    bottom: 2px;
+    left: 72px;
+    font-weight: bold;
+    background: white;
+    color: #053505;
+    padding: 15px;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 2px;
+
+}
+
+/* DISEÑO RESPONSIVE */
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    #container-main h2 {
+        text-align: center;
+    }
+    #container-main section {
+        gap: 5px;
+    }
+
+    .article-book {
+        width: 220px;
+    }
+
+    .content-book:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    #container-main h2 {
+        margin-left: 80px;
+    }
+    #container-main section {
+        gap: 25px;
+    }
+
+    .article-book {
+        width: 245px;
+    }
 }
